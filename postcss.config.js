@@ -1,5 +1,3 @@
 module.exports = {
-    plugins : {
-        plugins: [require("taiwindcss"), require("autoprefixer")],
-    }
-}
+  plugins: [require("taiwindcss"), require("autoprefixer")],
+};
