@@ -4,7 +4,7 @@ function App() {
   return (
     <div className=" max-w-[] ">
       <Components.Header />
-      {/* <Components.Hero /> */}
+      <Components.Hero />
     </div>
   );
 }
