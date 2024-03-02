@@ -2,7 +2,7 @@ import * as Components from "./components/index";
 
 function App() {
   return (
-    <div className=" max-w-[] ">
+    <div className=" flex flex-col gap-[2rem] ">
       <Components.Header />
       <Components.Hero />
     </div>

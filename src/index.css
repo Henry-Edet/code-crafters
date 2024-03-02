@@ -5,8 +5,8 @@
 :root {
   --blue: #0077cc;
   --lightBlue: #3867b3;
-  --white: #ffffff;
   --black: #1b152b;
+  --white: #fff;
 }
 
 html {
