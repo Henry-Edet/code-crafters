@@ -1,7 +1,7 @@
 
 function App() {
   return (
-    <div>
+    <div className="border-2rem border-red-500">
       <h2>
         Welcome back Ghost
       </h2>
