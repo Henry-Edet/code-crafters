@@ -3,9 +3,10 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --blue: "#0077CC";
-  --lightBlue: "#3867B3"
-  --black: "#1B152B";
+  --blue: #0077cc;
+  --lightBlue: #3867b3;
+  --white: #ffffff;
+  --black: #1b152b;
 }
 
 html {
