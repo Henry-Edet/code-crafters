@@ -4,8 +4,7 @@ function App() {
   return (
     <div className="App">
       <Components.Header />
-      <Components.Hero />
-      <Components.Header />
+      {/* <Components.Hero /> */}
     </div>
   );
 }

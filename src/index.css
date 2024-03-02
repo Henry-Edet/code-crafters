@@ -4,19 +4,19 @@
 
 html {
     font-family: "Inter", sans-serif;
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 /* // responsiveness // */
 
 @media only screen and (max-width: 1250px) {
-  html {
+    html {
     font-size: 58%;
-  }
+    }
 }
 
 @media only screen and (max-width: 431px) {
-  html {
+    html {
     font-size: 62.5%;
-  }
+    }
 }
