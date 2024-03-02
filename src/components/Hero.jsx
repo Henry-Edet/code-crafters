@@ -1,5 +1,5 @@
 function Hero() {
-  return <section className=" ring-1 bg-red-800 ">Hello somebody</section>;
+  return <section className="">Hello somebody</section>;
 }
 
 export default Hero;
