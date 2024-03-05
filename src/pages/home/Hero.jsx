@@ -1,15 +1,5 @@
-import HEROIMG from "./../assets/Hero-img.png";
-
-const Button = ({ bgClr, textClr, children }) => {
-  return (
-    <button
-      style={{ background: bgClr, color: textClr }}
-      className=" text-[1.5rem] text-[white] ring-1 px-[1.5rem] py-[.7rem] rounded-full "
-    >
-      {children}
-    </button>
-  );
-};
+import * as Components from "./../../components/index";
+import HEROIMG from "./../../assets/Hero-img.png";
 
 function Hero() {
   return (
@@ -23,17 +13,17 @@ function Hero() {
         </p>
 
         <div className=" flex justify-center items-center gap-[3rem] w-full ">
-          <Button bgClr={"var(--black"} textClr={"white"}>
+          <Components.Button bgClr={"var(--black"} textClr={"white"}>
             Signup
-          </Button>
-          <Button bgClr={"var(--blue)"} textClr={"white"}>
+          </Components.Button>
+          <Components.Button bgClr={"var(--blue)"} textClr={"white"}>
             Contact Us
-          </Button>
+          </Components.Button>
         </div>
       </div>
       <figure className=" h-[24.5rem] overflow-hidden rounded-3xl ">
         <img
-          className=" object-cover h-full w-full"
+          className=" object-cover h-full w-full ring-1 ring-red-800"
           src={HEROIMG}
           alt="hero-img"
         />
