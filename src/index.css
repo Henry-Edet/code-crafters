@@ -8,6 +8,7 @@
   --black: #1b152b;
   --white: #fff;
   --lightgrey: #edf0ee;
+  --purple: #7a7d9c;
 }
 
 html {
@@ -22,6 +23,9 @@ html {
 @layer components {
   h1 {
     @apply text-[3rem] mobile:text-[4.8rem] lg:text-[7.2rem];
+  }
+  p {
+    @apply text-[1.6rem];
   }
   .generalPadding {
     @apply px-[2rem] mobile:px-[5rem];
