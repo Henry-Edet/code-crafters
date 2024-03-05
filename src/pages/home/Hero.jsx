@@ -28,6 +28,19 @@ function Hero() {
           alt="hero-img"
         />
       </figure>
+
+      {/* membership & active members with number of projects below */}
+
+      <div className="ring-1 ring-[var(--lightgrey)] rounded-2xl text-[var(--lightBlue)] ">
+        <h2>50</h2>
+        <p>New members per month</p>
+        <hr className="w-[50%] m-auto" />
+        <h2>42</h2>
+        <p>Active users</p>
+        <hr className="w-[50%] m-auto" />
+        <h2>5</h2>
+        <p>Projects</p>
+      </div>
     </section>
   );
 }
