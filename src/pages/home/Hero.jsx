@@ -3,7 +3,7 @@ import HEROIMG from "./../../assets/Hero-img.png";
 
 function Hero() {
   return (
-    <section className=" text-center flex flex-col gap-[2rem] generalPadding ">
+    <section className=" text-center flex flex-col gap-[2rem] generalPadding ring-1 py-[3rem]">
       <h1 className=" ">Learn, code, connect. Become a Code Crafter.</h1>
       <div className=" flex flex-col gap-[.5rem]">
         <p className=" text-[1.5rem]">
@@ -30,14 +30,14 @@ function Hero() {
       {/* membership & active members with number of projects below */}
 
       <div className="ring-1 ring-[var(--lightgrey)] rounded-2xl text-[var(--lightBlue)] ">
-        <h2>50</h2>
-        <p>New members per month</p>
+        <h2 className=" text-[2rem]">50</h2>
+        <p className=" text-[1.6rem]">New members per month</p>
         <hr className="w-[50%] m-auto" />
-        <h2>42</h2>
-        <p>Active users</p>
+        <h2 className=" text-[2rem]">42</h2>
+        <p className=" text-[1.6rem]">Active users</p>
         <hr className="w-[50%] m-auto" />
-        <h2>5</h2>
-        <p>Projects</p>
+        <h2 className=" text-[2rem]">5</h2>
+        <p className=" text-[1.6rem]">Projects</p>
       </div>
     </section>
   );
