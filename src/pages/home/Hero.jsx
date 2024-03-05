@@ -3,10 +3,8 @@ import HEROIMG from "./../../assets/Hero-img.png";
 
 function Hero() {
   return (
-    <section className=" text-center flex flex-col gap-[2rem] generalPadding">
-      <h1 className=" generalPadding ">
-        Learn, code, connect. Become a Code Crafter.
-      </h1>
+    <section className=" text-center flex flex-col gap-[2rem] generalPadding ">
+      <h1 className=" ">Learn, code, connect. Become a Code Crafter.</h1>
       <div className=" flex flex-col gap-[.5rem]">
         <p className=" text-[1.5rem]">
           Unlock your potential, unlock the future. Code with us.

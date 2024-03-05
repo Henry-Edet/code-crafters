@@ -6,6 +6,7 @@ function App() {
     <div className=" flex flex-col gap-[2rem] ">
       <Components.Header />
       <Home.Hero />
+      <Home.Mission />
     </div>
   );
 }
