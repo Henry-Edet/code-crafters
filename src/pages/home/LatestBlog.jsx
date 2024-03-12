@@ -4,7 +4,7 @@ import SEMINAR from "./../../assets/webinar-img.png";
 
 const latestBlogData = [
   { image: WORKSHOP, buttonTXT: "HealthCare", header: "Workshop" },
-  { image: SEMINAR, buttonTXT: "Blovkchain", header: "Seminar" },
+  { image: SEMINAR, buttonTXT: "Blockchain", header: "Seminar" },
 ];
 
 function LatestBlogCard({ content }) {

@@ -1,7 +1,7 @@
 export function CraftSolCard({ content, shouldIncludeLine = false }) {
   return (
     <li
-      className={` flex flex-col justify-center items-center gap-[2rem] w-[full] mobile:w-[20rem] py-[8rem] border-[var(--lightgrey)] ${
+      className={` flex flex-col justify-center items-center gap-[2rem] w-[full] mobile:w-[20%] py-[8rem] border-[var(--lightgrey)] ${
         shouldIncludeLine && "border-b-2"
       } `}
     >

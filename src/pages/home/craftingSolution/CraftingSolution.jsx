@@ -25,7 +25,7 @@ const craftingSolutionsData = [
 
 function CraftingSolution() {
   const len = craftingSolutionsData.length - 1;
-  console.log(len);
+  // console.log(len);
   return (
     <section className=" ring-1 CraftSol generalPadding flex flex-col gap-[6rem] text-center ">
       <div className=" flex flex-col gap-[2rem]">

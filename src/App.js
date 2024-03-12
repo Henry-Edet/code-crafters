@@ -1,5 +1,6 @@
 import * as Home from "./pages/home/index";
 import * as Components from "./components/index";
+// import Start from "./pages/home/footers/Endfooter";
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <Home.Mission />
       <Home.Trusted />
       <Home.LatestBlog />
+      <Home.EmailSection />
+      <Home.Footer />
     </div>
   );
 }
