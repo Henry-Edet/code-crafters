@@ -9,7 +9,7 @@ const ourStats = [
 
 function Hero() {
   return (
-    <section className=" text-center flex flex-col gap-[2rem] mobile:gap-[3rem] generalPadding ring-1 py-[3rem]">
+    <section className=" text-center flex flex-col gap-[2rem] mobile:gap-[3rem] generalPadding py-[3rem]">
       <h1 className=" ">Learn, code, connect. Become a Code Crafter.</h1>
       <div className=" flex flex-col gap-[.5rem] mobile:gap-[1.5rem]">
         <p className=" text-[1.2rem] mobile:text-[1.6rem]">
