@@ -2,7 +2,7 @@ import menu02 from "./../assets/menu02.png";
 
 function Header() {
   return (
-    <nav className=" generalPadding">
+    <nav className=" generalPadding w-full">
       <div className="flex justify-between justify-content items-center bg-[var(--black)] text-[var(--white)] rounded-full px-4 py-2 mt-16 w-full">
         <div>
           <b>CC</b> CODE CRAFTERS

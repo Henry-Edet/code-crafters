@@ -7,7 +7,7 @@ function Trusted() {
         <img className=" h-full " src={NEU} alt="near east university" />
       </figure>
       <div className=" order-2 mobile:order-1 md:order-2 max-w-[80rem]">
-        <h1>Trusted by Near East University</h1>
+        <h1 className=" text-[4.8rem]">Trusted by Near East University</h1>
         <p className=" text-[var(--purple)]">
           With the backing of Near East University, we champion a mission to
           empower aspiring engineers through collaborative innovation and

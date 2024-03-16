@@ -29,7 +29,7 @@ function CraftingSolution() {
   return (
     <section className=" CraftSol generalPadding flex flex-col gap-[6rem] text-center py-[4rem] ">
       <div className=" flex flex-col gap-[2rem]">
-        <h1 className=" ">
+        <h1 className=" text-[4.8rem] ">
           Crafting solutions, building a better tomorrow with Code Crafters.
         </h1>
         <p className=" ">Level up your skills. Code with confidence</p>

@@ -32,9 +32,9 @@ function LatestBlogCard({ content }) {
 
 function LatestBlog() {
   return (
-    <section className=" generalPadding flex flex-col gap-[2rem] text-center py-[4rem]">
-      <h1>From Our Latest Blogs</h1>
-      <ul className=" flex mobile:flex-row flex-col gap-[6rem] justify-center items-center rounded-3xl py-[2rem] px-[2rem]">
+    <section className=" generalPadding flex flex-col gap-[2rem] text-center py-[4rem] w-full">
+      <h1 className=" text-[4.8rem]">From Our Latest Blogs</h1>
+      <ul className=" flex md:flex-row flex-col gap-[6rem] justify-center items-center rounded-3xl py-[2rem] px-[2rem]">
         {latestBlogData.map((obj, idx) => {
           return <LatestBlogCard key={idx} content={obj} />;
         })}
