@@ -3,7 +3,7 @@ import empower from "./../../assets/empower-img.png";
 
 function Mission() {
   return (
-    <section className=" text-center flex flex-col gap-[2rem] generalPadding">
+    <section className=" text-center flex flex-col gap-[2rem] generalPadding py-[4rem]">
       <div className="flex flex-col gap-[3rem] px-[2rem] py-[2rem] ring-1 ring-[var(--lightgrey)] rounded-2xl">
         <div className=" flex justify-center items-center text-[var(--lightBlue)] px-[1.5rem] rounded-full bg-[var(--almostwhite)] w-[17rem] h-[2.5rem]">
           <p className="Regular text-[1.2rem]">Our Mission Statement</p>

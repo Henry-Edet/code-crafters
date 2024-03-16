@@ -6,7 +6,7 @@ import { Button } from "../../../components";
 
 const EmailSection = () => {
   return (
-    <section className="text-center text-[var(--white)] flex flex-col gap-[2rem] generalPadding h-[70vh]">
+    <section className=" bg-transparent text-center text-[var(--white)] flex flex-col gap-[2rem] generalPadding h-[70vh]">
       <div className=" footer h-full flex flex-col gap-[2rem] justify-end items-center py-[2rem] px-[2rem] rounded-3xl">
         <figure className=" flex items-center justify-center w-full">
           <img src={envelope} alt="notification envelope" className="overlay" />

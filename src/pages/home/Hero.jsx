@@ -1,12 +1,18 @@
 import * as Components from "./../../components/index";
 import HEROIMG from "./../../assets/Hero-img.png";
 
+const ourStats = [
+  { number: "50", text: "New members per month" },
+  { number: "42", text: "Active Members" },
+  { number: "5", text: "Projects" },
+];
+
 function Hero() {
   return (
-    <section className=" text-center flex flex-col gap-[2rem] generalPadding ring-1 py-[3rem]">
+    <section className=" text-center flex flex-col gap-[2rem] mobile:gap-[3rem] generalPadding ring-1 py-[3rem]">
       <h1 className=" ">Learn, code, connect. Become a Code Crafter.</h1>
-      <div className=" flex flex-col gap-[.5rem]">
-        <p className=" text-[1.5rem]">
+      <div className=" flex flex-col gap-[.5rem] mobile:gap-[1.5rem]">
+        <p className=" text-[1.2rem] mobile:text-[1.6rem]">
           Unlock your potential, unlock the future. Code with us.
         </p>
 
@@ -19,7 +25,7 @@ function Hero() {
           </Components.Button>
         </div>
       </div>
-      <figure className=" h-[24.5rem] overflow-hidden rounded-3xl ">
+      <figure className=" h-[24.5rem] mobile:h-[26rem] sm:h-[42rem] overflow-hidden rounded-3xl mobile:rounded-[30rem] mt-0 mobile:mt-[2rem] ">
         <img
           className=" object-cover h-full w-full ring-1 ring-red-800"
           src={HEROIMG}
@@ -29,16 +35,14 @@ function Hero() {
 
       {/* membership & active members with number of projects below */}
 
-      <div className="ring-1 ring-[var(--lightgrey)] rounded-2xl text-[var(--lightBlue)] ">
-        <h2 className=" text-[2rem]">50</h2>
-        <p className=" text-[1.6rem]">New members per month</p>
-        <hr className="w-[50%] m-auto" />
-        <h2 className=" text-[2rem]">42</h2>
-        <p className=" text-[1.6rem]">Active users</p>
-        <hr className="w-[50%] m-auto" />
-        <h2 className=" text-[2rem]">5</h2>
-        <p className=" text-[1.6rem]">Projects</p>
-      </div>
+      <ul className=" flex flex-col justify-normal mobile:justify-between mobile:hidden md:flex md:flex-row ring-1 ring-[var(--lightgrey)] bg-[var(--white)] px-[5rem] py-[2rem] rounded-2xl text-[var(--lightBlue)]  ">
+        {ourStats.map((obj, idx) => (
+          <li key={idx} className=" flex flex-col h-fit ">
+            <h1 className="">{obj.number}</h1>
+            <p className=" text-[1.6rem] mobile:text-[2.4rem]">{obj.text}</p>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

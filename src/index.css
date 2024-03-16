@@ -13,6 +13,9 @@
   --purple: #7a7d9c;
   --lavender: #7f56d9;
 }
+body {
+  background-color: var(--lightgrey);
+}
 
 html {
   font-family: "Inter", sans-serif;
@@ -21,6 +24,11 @@ html {
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
+}
+
+section {
+  background-color: var(--white);
+  border-radius: 3rem;
 }
 
 @layer components {
@@ -42,9 +50,93 @@ html {
     font-size: 58%;
   }
 }
+@media only screen and (max-width: 1146px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 42%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 38%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 32%;
+  }
+}
 
 @media only screen and (max-width: 431px) {
   html {
     font-size: 62.5%;
   }
 }
+
+/* 
+//////////////
+/////////////
+/////////////
+///////////
+/////////////
+ */
+
+/* @media only screen and (max-width: 1250px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 46%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 42%;
+  }
+}
+@media only screen and (max-width: 510px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (max-width: 339px) {
+  html {
+    font-size: 58%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 285px) {
+  html {
+    font-size: 53%;
+  }
+} */
