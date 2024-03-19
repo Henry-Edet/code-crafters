@@ -1,6 +1,7 @@
 import { Button } from "../../components";
 import WORKSHOP from "./../../assets/workshop-img.png";
 import SEMINAR from "./../../assets/webinar-img.png";
+import { ContactusNViewall } from "../../components/ui/ContactusNViewall";
 
 const latestBlogData = [
   { image: WORKSHOP, buttonTXT: "HealthCare", header: "Workshop" },
@@ -39,14 +40,7 @@ function LatestBlog() {
           return <LatestBlogCard key={idx} content={obj} />;
         })}
       </ul>
-      <div className=" flex justify-center items-center md:hidden gap-[2rem]">
-        <Button bgClr={"var(--blue)"} textClr={"var(--white)"}>
-          Contact Us
-        </Button>
-        <Button bgClr={"var(--white)"} textClr={"var(--black)"}>
-          View all {">"}
-        </Button>
-      </div>
+      <ContactusNViewall />
     </section>
   );
 }

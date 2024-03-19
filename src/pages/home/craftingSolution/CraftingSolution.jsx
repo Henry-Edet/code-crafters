@@ -5,6 +5,8 @@ import GROWIMG from "./../../../assets/grow-icon.png";
 import EMPOWERIMG from "./../../../assets/empower-icon.png";
 import { CraftSolCard } from "./CraftSolCard";
 
+import { ContactusNViewall } from "../../../components/ui/ContactusNViewall";
+
 const craftingSolutionsData = [
   {
     image: SEAMLESSIMG,
@@ -35,7 +37,7 @@ function CraftingSolution() {
         <p className=" ">Level up your skills. Code with confidence</p>
       </div>
 
-      <ul className=" flex flex-col mobile:flex-row mobile:flex-wrap w-full justify-center items-center ring-1 ring-[var(--lightgrey)] rounded-3xl px-[4rem] mobile:px-[2rem] py-[4rem] mobile:py-[8rem]">
+      <ul className=" flex flex-col mobile:flex-row mobile:flex-wrap w-full justify-center items-center ring-1 ring-[var(--lightgrey)] rounded-3xl px-[4rem] mobile:px-0 sm:px-[1rem] py-[4rem] mobile:py-[8rem]">
         {craftingSolutionsData.map((obj, idx) => (
           <CraftSolCard
             key={idx}
@@ -44,6 +46,7 @@ function CraftingSolution() {
           />
         ))}
       </ul>
+      <ContactusNViewall />
     </section>
   );
 }

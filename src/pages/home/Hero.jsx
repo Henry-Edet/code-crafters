@@ -35,7 +35,7 @@ function Hero() {
 
       {/* membership & active members with number of projects below */}
 
-      <ul className=" flex flex-col gap-[5rem] justify-normal mobile:justify-between mobile:hidden md:flex md:flex-row ring-1 ring-[var(--lightgrey)] bg-[var(--white)] px-[5rem] py-[2rem] rounded-2xl text-[var(--lightBlue)]  ">
+      <ul className=" flex flex-col gap-[5rem] justify-normal mobile:justify-between mobile:flex mobile:flex-row ring-1 ring-[var(--lightgrey)] bg-[var(--white)] px-[5rem] py-[2rem] rounded-2xl text-[var(--lightBlue)]  ">
         {ourStats.map((obj, idx) => (
           <li key={idx} className=" flex flex-col h-fit ">
             <h1 className=" text-[4.8rem]">{obj.number}</h1>
