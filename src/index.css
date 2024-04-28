@@ -32,14 +32,17 @@ section {
 }
 
 @layer components {
-  h1 {
+  .heroHeader {
     @apply text-[3rem] mobile:text-[4.8rem] lg:text-[7.2rem];
   }
+  .header {
+    @apply text-[2.4rem] mobile:text-[3rem] lg:text-[4.8rem];
+  }
   p {
-    @apply text-[1.6rem];
+    @apply text-[1.2rem] mobile:text-[1.6rem];
   }
   .generalPadding {
-    @apply px-[2rem] mobile:px-[5rem];
+    @apply px-[1rem] mobile:px-[3rem] md:px-[5rem];
   }
 }
 

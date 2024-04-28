@@ -59,7 +59,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-start text-[var(--white)] w-full">
+    <footer className=" text-start text-[var(--white)] w-full">
       <div className="background px-[1rem] py-[6rem]">
         <hr className="w-[90%] m-auto" />
         <h2 className="text-[1.997rem] items-start px-[3rem] py-[1.8rem] coding m-auto">

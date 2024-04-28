@@ -1,11 +1,9 @@
-import "./craftSol.css";
-
 import SEAMLESSIMG from "./../../../assets/colab-Icon.png";
 import GROWIMG from "./../../../assets/grow-icon.png";
 import EMPOWERIMG from "./../../../assets/empower-icon.png";
 import { CraftSolCard } from "./CraftSolCard";
 
-import { ContactusNViewall } from "../../../components/ui/ContactusNViewall";
+import { ContactusNViewall } from "../../../components/ui/button/ContactusNViewall";
 
 const craftingSolutionsData = [
   {
@@ -29,15 +27,17 @@ function CraftingSolution() {
   const len = craftingSolutionsData.length - 1;
   // console.log(len);
   return (
-    <section className=" CraftSol generalPadding flex flex-col gap-[6rem] text-center py-[4rem] ">
+    <section className=" generalPadding flex flex-col gap-[6rem] text-center py-[4rem] ">
       <div className=" flex flex-col gap-[2rem]">
-        <h1 className=" text-[4.8rem] ">
+        <h1 className=" header ">
           Crafting solutions, building a better tomorrow with Code Crafters.
         </h1>
-        <p className=" ">Level up your skills. Code with confidence</p>
+        <p className=" text-customPurple ">
+          Level up your skills. Code with confidence
+        </p>
       </div>
 
-      <ul className=" flex flex-col mobile:flex-row mobile:flex-wrap w-full justify-center items-center ring-1 ring-[var(--lightgrey)] rounded-3xl px-[4rem] mobile:px-0 sm:px-[1rem] py-[4rem] mobile:py-[8rem]">
+      <ul className=" flex flex-col mobile:flex-row mobile:flex-wrap w-full justify-center items-center ring-1 ring-[var(--lightgrey)] rounded-3xl px-[4rem] mobile:px-0 sm:px-[1rem] mobile:py-[8rem]">
         {craftingSolutionsData.map((obj, idx) => (
           <CraftSolCard
             key={idx}

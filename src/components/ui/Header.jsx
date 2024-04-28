@@ -1,4 +1,4 @@
-import menu02 from "./../assets/menu02.png";
+import menu02 from "./../../assets/menu02.png";
 
 function Header() {
   return (
