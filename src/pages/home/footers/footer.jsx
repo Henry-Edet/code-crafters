@@ -1,18 +1,14 @@
-import twit from "./../../../assets/x.png";
-import insta from "./../../../assets/insta.png";
-import git from "./../../../assets/git.png";
-import mail from "./../../../assets/gmail.png";
 import "./footer.css";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
 
 const FooterIcon = ({ platform, link, image }) => {
   return (
-    <li>
+    <li style={{ fontSize: "2rem" }}>
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          src={image}
-          alt=""
-          className="w-[2.2rem] h-[2.2rem] object-contain"
-        />
+        {image}
         {/* {platform} */}
       </a>
     </li>
@@ -23,25 +19,25 @@ const Footer = () => {
   const socialIcons = [
     {
       id: 1,
-      image: twit,
+      image: <FaXTwitter />,
       platform: "X",
       link: "https://twitter.com/",
     },
     {
       id: 2,
-      image: insta,
+      image: <FaInstagram />,
       platform: "Instagram",
       link: "https://instagram.com/",
     },
     {
       id: 3,
-      image: git,
+      image: <FaGithub />,
       platform: "Github",
       link: "https://github.com/",
     },
     {
       id: 4,
-      image: mail,
+      image: <BiLogoGmail />,
       platform: "gmail",
       link: "https://gmail.com/",
     },
@@ -59,17 +55,17 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-start text-[var(--white)] w-full">
+    <footer className="text-start text-[var(--white)] w-full ">
       <div className="background px-[1rem] py-[6rem]">
         <hr className="w-[90%] m-auto" />
-        <h2 className="text-[1.997rem] items-start px-[3rem] py-[1.8rem] coding m-auto">
+        <p className="text-[1.997rem] px-[3rem] py-[1.8rem] coding ml-[2rem] mobile:ml-[2rem] sm:ml-[2.3rem]">
           CODE CRAFTERS
-        </h2>
-        <ul className="flex flex-row items-start gap-6 text-[1.6rem] px-[3rem] py-[2rem] listItems">
+        </p>
+        <ul className="flex flex-row items-start gap-6 text-[1.6rem] px-[3rem] py-[2rem] listItems ml-[2rem] mobile:ml-[2rem] sm:ml-[2.3rem]">
           {renderListItem()}
         </ul>
         <hr className="w-[90%] m-auto" />
-        <ul className="flex mobile:flex-row px-[2rem] py-[2rem] gap-6">
+        <ul className="flex mobile:flex-row py-[2rem] gap-6 mr-[4rem] mobile:ml-[5.3rem]">
           {renderFooterIcons()}
         </ul>
       </div>
