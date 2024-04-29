@@ -2,9 +2,48 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+:root {
+  --blue: #0077cc;
+  --lightBlue: #3867b3;
+  --black: #1b152b;
+  --white: #fff;
+  --lightgrey: #edf0ee;
+  --almostwhite: #c0c0c0;
+  --someshadeofgrey: #7a7d9c;
+  --purple: #7a7d9c;
+  --lavender: #7f56d9;
+}
+body {
+  background-color: var(--lightgrey);
+}
+
 html {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 62.5%;
+  max-width: 150rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+
+section {
+  background-color: var(--white);
+  border-radius: 3rem;
+}
+
+@layer components {
+  .heroHeader {
+    @apply text-[3rem] mobile:text-[4.8rem] lg:text-[7.2rem];
+  }
+  .header {
+    @apply text-[2.4rem] mobile:text-[3rem] lg:text-[4.8rem];
+  }
+  p {
+    @apply text-[1.2rem] mobile:text-[1.6rem];
+  }
+  .generalPadding {
+    @apply px-[1rem] mobile:px-[3rem] md:px-[5rem];
+  }
 }
 
 /* // responsiveness // */
@@ -14,9 +53,93 @@ html {
     font-size: 58%;
   }
 }
+@media only screen and (max-width: 1146px) {
+  html {
+    font-size: 54%;
+  }
+}
 
-@media only screen and (max-width: 431px) {
+@media only screen and (max-width: 1060px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 42%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 38%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 32%;
+  }
+}
+
+/* @media only screen and (max-width: 431px) {
+  html {
+    font-size: 62.5%;
+  }
+} */
+
+/* 
+//////////////
+/////////////
+/////////////
+///////////
+/////////////
+ */
+
+/* @media only screen and (max-width: 1250px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 46%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 42%;
+  }
+}
+@media only screen and (max-width: 510px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 500px) {
   html {
     font-size: 62.5%;
   }
 }
+
+@media only screen and (max-width: 339px) {
+  html {
+    font-size: 58%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 285px) {
+  html {
+    font-size: 53%;
+  }
+} */
