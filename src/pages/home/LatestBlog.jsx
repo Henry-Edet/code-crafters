@@ -1,4 +1,4 @@
-import { Button } from "../../components/ui";
+import { Button } from "../../components/ui/index";
 import WORKSHOP from "./../../assets/clay-banks-7FrYxn7ttzs-unsplash.jpg";
 import SEMINAR from "./../../assets/lorenzo-fustaino-r5F6oYzyhCo-unsplash.jpg";
 

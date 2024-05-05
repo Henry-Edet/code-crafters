@@ -1,7 +1,6 @@
 // import beCool from "./../../../assets/do-cool-things.png";
 import { useState } from "react";
 import envelope from "./../../assets/Icon Wrapper.png";
-// import "./../../../pages/home/footers/footer.css";
 import { Button } from "../../components/ui";
 
 const EmailSection = () => {
