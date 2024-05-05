@@ -9,7 +9,6 @@ const FooterIcon = ({ platform, link, image }) => {
     <li style={{ fontSize: "2rem" }}>
       <a href={link} target="_blank" rel="noopener noreferrer">
         {image}
-        {/* {platform} */}
       </a>
     </li>
   );
@@ -56,16 +55,16 @@ const Footer = () => {
 
   return (
     <footer className=" text-start text-[var(--white)] w-full">
-      <div className="background px-[1rem] py-[6rem]">
-        <hr className="w-[90%] m-auto" />
-        <p className="text-[1.997rem] px-[3rem] py-[1.8rem] coding ml-[2rem] mobile:ml-[2rem] sm:ml-[2.3rem]">
+      <div className="background px-[2rem] mobile:px-[3rem] py-[6rem]">
+        <hr className="w-full m-auto" />
+        <p className="  text-[1.997rem] py-[1.8rem] coding ">
           CODE CRAFTERS
         </p>
-        <ul className="flex flex-row items-start gap-6 text-[1.6rem] px-[3rem] py-[2rem] listItems ml-[2rem] mobile:ml-[2rem] sm:ml-[2.3rem]">
+        <ul className="  flex flex-row items-start gap-6 text-[1.6rem] py-[2rem] listItems">
           {renderListItem()}
         </ul>
-        <hr className="w-[90%] m-auto" />
-        <ul className="flex mobile:flex-row py-[2rem] gap-6 mr-[4rem] mobile:ml-[5.3rem]">
+        <hr className="w-full m-auto" />
+        <ul className="  flex mobile:flex-row py-[2rem] gap-6 ">
           {renderFooterIcons()}
         </ul>
       </div>
