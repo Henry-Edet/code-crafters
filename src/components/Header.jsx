@@ -1,5 +1,5 @@
-import menu02 from "./../../assets/menu02.png";
-import * as Components from "./index";
+import menu02 from "./../assets/menu02.png";
+import * as Components from "./ui/index";
 
 function Header() {
   return (
