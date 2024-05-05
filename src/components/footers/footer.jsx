@@ -33,7 +33,7 @@ const Footer = () => {
       id: 3,
       image: <FaGithub />,
       platform: "Github",
-      link: "https://github.com/",
+      link: "https://github.com/Henry-Edet/code-crafters",
     },
     {
       id: 4,
