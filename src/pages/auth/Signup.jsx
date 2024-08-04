@@ -1,26 +1,34 @@
 import React from "react";
 import "../auth/auth";
 import { useState } from "react";
-import CC from "./../../assets/CC.png";
-// import { Link } from "react-router-dom";
+import BackVid from "../../components/BackVid";
+import "./auth.css"
 
 const Signup = () => {
-  const [inputs, setInputs] = useState({
-    fullName: "",
-    username: "",
-    password: "",
-    confirmPassword: "",
-    gender: "",
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(inputs);
-  };
+  
   return (
-    <figure>
-      <img src={CC} alt="dey play" />
-      <div className="w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
+    <div className="hero flex flex-col gap-[5rem]">
+        <BackVid/>                        
+    </div>
+  );
+};
+
+export default Signup;
+
+
+// const [inputs, setInputs] = useState({
+//     fullName: "",
+//     username: "",
+//     password: "",
+//     confirmPassword: "",
+//     gender: "",
+//   });
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();         
+//     console.log(inputs);
+//   };
+{/* <div className=" ring-2 h-fit w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
         <h1>hello henry</h1>
 
         <form onSubmit={handleSubmit}>
@@ -30,7 +38,7 @@ const Signup = () => {
             </label>
             <input
               type="text"
-              placeholder="Your Name"
+              placeholder="Your Name"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
               className="w-full input input-bordered h-10"
               value={inputs.username}
               onChange={(e) =>
@@ -83,10 +91,7 @@ const Signup = () => {
             />
           </div>
 
-          {/* <GenderCheckbox
-            onCheckboxChange={handleCheckboxChange}
-            selectedGender={inputs.gender}
-          /> */}
+          
 
           <div
             to="/login"
@@ -100,10 +105,4 @@ const Signup = () => {
             <button className="btn btn-block btn-sm mt-2">Sign Up</button>
           </div>
         </form>
-      </div>
-      ;
-    </figure>
-  );
-};
-
-export default Signup;
+      </div> */}

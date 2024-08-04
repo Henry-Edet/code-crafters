@@ -1,7 +1,22 @@
-/* .signup {
-  background: url("/src/assets/do-cool-things.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-} */
+hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  background: rgb(0, 0, 0, 0.35);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  /* border: 2px solid rgb(255, 255, 255); */
+}
+
+.video-bg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
