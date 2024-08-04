@@ -1,14 +1,10 @@
-// import * as Components from "./components/index";
-// import * as routers from "./router/routes";
-import * as auth from "./pages/auth/auth";
+import { RouterProvider } from "react-router-dom";
+import router from "./router/router";
 
 function App() {
   return (
-    <div className=" flex flex-col gap-[2rem] md:gap-[4rem] bg-customWhite ">
-      {/* <Components.Header />
-      <routers.Home />
-      <Components.Footer /> */}
-      <auth.Signup />
+    <div className="App ">
+      <RouterProvider router={router} />
     </div>
   );
 }
