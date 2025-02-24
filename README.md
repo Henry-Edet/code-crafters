@@ -1,4 +1,4 @@
-# An upgrade is ongoing
+# ongoing
 # The official site for codecrafters ...
 
 
