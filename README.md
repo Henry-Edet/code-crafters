@@ -1,5 +1,5 @@
 # 
-# The official site for codecrafters ...
+# The official site for codecrafters 
 
 
     codecrafters website
